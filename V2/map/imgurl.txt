@@ -1,0 +1,9 @@
+<video id="0" width="250" height="150" controls autoplay><source src="videos/blr.mp4" type="video/mp4"></video>
+<video id="1" width="250" height="150" controls autoplay><source src="videos/mys.mp4" type="video/mp4"></video>
+<video id="2" width="250" height="150" controls autoplay><source src="videos/mdk.mp4" type="video/mp4"></video>
+<video id="3" width="250" height="150" controls autoplay><source src="videos/mlr.mp4" type="video/mp4"></video>
+<video id="4" width="250" height="150" controls autoplay><source src="videos/cmlr.mp4" type="video/mp4"></video>
+<video id="5" width="250" height="150" controls autoplay><source src="videos/smg.3gp" type="video/mp4"></video>
+<video id="6" width="250" height="150" controls autoplay><source src="videos/hmp.mp4" type="video/mp4"></video>
+<video id="7" width="250" height="150" controls autoplay><source src="videos/blgm.mp4" type="video/mp4"></video>
+<video id="8" width="250" height="150" controls autoplay><source src="videos/bjp.mp4" type="video/mp4"></video>

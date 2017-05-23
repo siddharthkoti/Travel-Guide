@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Home</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap-iso.css" />
+		<script type="text/javascript" src="bootstrap-3.3.6-dist/date/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/date/bootstrap-datepicker3.css"/>
+		<link rel = "stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<style>
+		body {
+			background-image: url("images/bg1.jpg");
+			}
+		.trans{
+				opacity: 0.7;
+				position: absolute;
+				height:250px;
+				float: left;
+		}
+		</style>
+		
+		<script>
+		function init(){
+		
+		xhr = new XMLHttpRequest();	
+			if(xhr)
+			{
+				xhr.onreadystatechange = getContent;
+				//xhr.open("GET", "content.txt", true);
+				//xhr.send(null);
+			}	
+		}
+		function getContent(){
+		
+		if(xhr.readyState == 4 && xhr.status == 200){
+				var arr=(xhr.responseText).split(";");
+				document.getElementById("secondary").innerHTML=arr[0];
+				document.getElementById("logo").innerHTML=arr[3];
+				document.getElementById("links").innerHTML=arr[3];
+				document.getElementById("audio").innerHTML=arr[3];
+				document.getElementById("picture").innerHTML=arr[3]; 
+				setTimeout(getPic, 4000);	
+		  }
+		
+		
+		}
+		</script>
+
+		<script>
+		    $(document).ready(function(){
+		      var date_input=$('input[name="date"]'); //our date input has the name "date"
+		      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		      var options={
+				format: "mm/dd/yyyy",
+			    startDate: "today",
+			    maxViewMode: 0,
+			    daysOfWeekHighlighted: "0,1,2,3,4,5,6",
+			    autoclose: true,
+			    todayHighlight: true
+		      };
+		      date_input.datepicker({
+		      		format: "dd/mm/yyyy",
+				    startDate: "today",
+				    maxViewMode: 0,
+				    daysOfWeekHighlighted: "0,1,2,3,4,5,6",
+				    autoclose: true,
+				    todayHighlight: true
+				});
+		    });
+		</script>
+
+	</head>
+	<body >
+		
+		<nav class="navbar navbar-inverse" style="font-size:14px;height:70;background-color: black;margin:0;border-radius: 0">
+		 <div class="container-fluid">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#"></a></li>
+				<li class="active"><a href="#"  style="color: #999"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li class="active"><a href="#"  style="color: #999"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		 </div>	
+		</nav>	
+		
+		<nav class="navbar navbar-inverse" style="font-size:16px;background-color: black;border-radius: 0">
+		 <div class="container-fluid">
+	
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#" style="color: #999">Home</a></li>
+			  <li class="active"><a href="#" style="color: #999">Hotels</a></li>
+			  <li class="active"><a href="#" style="color: #999">Holidays</a></li>
+			  <li class="active"><a href="#" style="color: #999">Deals</a></li>
+			  
+		    </ul>
+		 </div>	
+		</nav>
+		<div>
+		</div>
+		<div class="fromTo">
+
+			<input type="text" name="from" id="from" placeholder="From" required>
+			<br><img src="images/arrow.png" style="height:20px;width=20px;margin: 6px 0 0 140px"><br>
+			<input type="text" name="to" id="To" placeholder="To" style="margin-top: 9px"required>
+			 <!-- Date input -->
+			 <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span> -->
+		    <input id="date" name="date" placeholder="DD/MM/YYY" type="date"/>
+      		
+
+			<!-- 
+			<div id="d1" class = "trans" style="width:33%;left:100px; ">
+			  <img src = "gif/load.gif" ></img>
+			</div>
+			<div id = "d2" class = "trans"  style="width:33%;left: 500px;">
+			  <img src = "gif/load.gif" ></img>
+			</div>
+			<div id = "d3"   class = "trans" style="left: 900px;">
+			  <img src = "gif/load.gif" ></img>
+			</div>
+			 -->		
+		 </div>
+		
+</body>
+</html>

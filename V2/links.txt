@@ -1,0 +1,14 @@
+<div style="font-size:16px">
+<p><em>Travel Portals</em></p>
+<ul>
+<li><a href="#">www.karnatakatourism.org</a></li>
+<li><a href="#">www.kstdc.co</a></li>
+<li><a href="#">www.booking.com</a></li>
+<li><a href="#">www.makemytrip.com</a></li>
+<li><a href="#">www.yatra.com</a></li>
+<li><a href="#">www.expedia.co.in</a></li>
+<li><a href="#">www.cleartrip.com</a></li>
+
+<ul>
+</div>
+

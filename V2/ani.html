@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title> </title>
+		<link rel = "stylesheet" type="text/css" href="css/animate.css"></link>
+		<script src="js/jquery-1.11.3.min.js"> </script>
+	</head>
+	<script>
+		function foo()
+		{
+			
+			$("#imgs").addClass('animated slideInUp');
+			$("#imgs").show();
+			//alert("hi");
+		}
+		$(document).ready(function(){
+			$("#imgs").hide();
+			setTimeout(foo,2000);
+		});
+	</script>
+	<body>
+	<img id = "imgs" src="images/k1.jpg" width="350" height="350">
+	</body>
+</html>
